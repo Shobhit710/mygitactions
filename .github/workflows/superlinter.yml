@@ -1,6 +1,8 @@
 name: Super-Linter
 
-on: push
+on: 
+  push:
+    branches: [ '*' ]
 
 jobs:
   super-lint:
@@ -12,5 +14,3 @@ jobs:
 
       - name: Run Super-Linter
         uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: main
